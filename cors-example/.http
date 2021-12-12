@@ -1,0 +1,8 @@
+### home page
+GET http://localhost:5500/
+Origin: https://mybank.com
+
+
+### address page
+GET http://localhost:5500/address
+Origin: https://mybank.com

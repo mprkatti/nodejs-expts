@@ -1,0 +1,16 @@
+### call home route
+GET http://localhost:6500/api/address/
+
+### call address update
+POST http://localhost:6500/api/address
+Content-Type: application/json
+
+{
+  "line1": "5th Ave",
+  "line2": "SK Park",
+  "city": "BLR",
+  "state": "KA",
+  "zip": "56001",
+  "country": "IND",
+  "phone": "918217699518"
+}
