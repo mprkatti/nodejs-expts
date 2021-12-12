@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: V3</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         console.log('token:', token);
+         setTimeout(function() {
+          console.log('Sleeping ...');
+         }, 5000);
+         document.getElementById("demo-form").submit();
+       }
+     </script>
+  </head>
+  <body>
+    <form id='demo-form' action="?" method="POST">
+      <button class="g-recaptcha" data-sitekey="6LdyxBEaAAAAAHLnPjY1U_DVC_X7t5qzwdj17Lbx" data-callback='onSubmit'
+      data-badge="bottomleft"
+      >Submit</button>
+      <br/>
+    </form>
+  </body>
+</html>

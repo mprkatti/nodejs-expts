@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicit Render</title>
+  <script type="text/javascript" >
+    var onloadCallback = function() {
+      console.log('I am here !!!')
+      const w1 = grecaptcha.render('html_element', {
+        'sitekey' : '6LcGgBEaAAAAAEyZW4lt1VLk-XEHSIq34oj5xC34',
+        'theme' : 'dark'
+      })
+    }
+  </script>
+</head>
+<body>
+  <form method="post" action onSubmit="">
+    <input type="text"  placeholder="Enter Search term ..."/>
+    <input type="submit" />
+  </form>
+  <div id="html_element" style="margin-top:200px"> </div>
+  <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"  async defer></script>
+</body>
+</html>
